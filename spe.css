@@ -1,0 +1,76 @@
+body {
+
+  background-color: #243141;
+  font-family: “Myriad Pro”, Arial, Helvetica, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, Tahoma, sans-serif;
+  font-size: 1.3em;
+
+  color: #e8e3cf; /* white */
+
+  padding: 5px;
+  margin: 0;
+
+}
+
+h1, h2 {
+
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+
+  margin-bottom: 10px;
+
+}
+
+div#container {
+
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+div {
+
+  margin-bottom: 5px;
+  padding: 0;
+
+}
+
+input {
+
+  background-color: #51748d; /* lightblue */
+  color: #e8e3cf; /* white */
+  font-size: 130%;
+  border: 1px solid #e8e3cf;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+#preview-outer {
+
+  width: 100%;
+  background-color: black;
+  border: 1px solid #e8e3cf;
+  padding: 0;
+  margin: 0;
+
+}
+
+#preview {
+
+  padding: 10px;
+
+}
+
+.cols {
+
+  color: #51748d; /* lightblue */
+  color: #b65626; /* orange */
+  color: #96361f; /* red */
+  color: #e8e3cf; /* white */
+
+}

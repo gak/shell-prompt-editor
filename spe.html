@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+  <head>
+    <title>Shell Prompt Editor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="spe.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="spe.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <h1>Shell Prompt Editor</h1>
+
+      <div>
+        Just a simple editor for creating and designing Bash prompts.
+      </div>
+
+      <div>
+        <input id="edit" type="text" value="[USERNAME] HOSTNAME: PATH">
+      </div>
+
+      <div id="preview-outer">
+
+        <pre id="preview">
+
+You have new mail.
+[gak] lh-dzldg1s: ~ ls -la
+total 596624
+drwxr-xr-x+ 35 gak   staff       2040 26 Mar 10:06 .
+drwxr-xr-x   4 root  admin        170 16 Jan 10:18 ..
+-rw-------   1 gak   staff          3 16 Jan 10:18 .CFUserTextEncoding
+-rw-r--r--@  1 gak   staff      21508 26 Mar 09:28 .DS_Store
+drwx------   3 gak   staff        170 25 Mar 22:43 .Trash
+-rw-------   1 gak   staff          0 16 Mar 17:31 .Xauthority
+drwxr-xr-x   2 gak   staff         68 16 Jan 21:11 .Xcode
+        </pre>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
