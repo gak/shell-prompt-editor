@@ -35,23 +35,63 @@ speFun = function() {
 
     updatePreview: function() {
 
-      len = $('#edit')[0].value;
+      textObj = $('#edit');
+      text = textObj[0].value;
+      console.log(text);
+      len = text.length;
+
       console.log(len);
 
       out = '';
+
+      hasSpan = false;
 
       for (i = 0; i < len; i++) {
 
         newStyles = [];
         newClasses = [];
 
-        if (self.codes.colour[i]) {
+        if (this.codes.colour[i]) {
+          newStyles.append('color: ' + this.codes.colour[i]);
+        }
 
-          newStyle.
+        if (newStyles) {
+          style = newStyles.join(';');
+        }
+
+        if (newClasses) {
+          class = newClasses.join(' ');
+        }
+
+        if (style || class) {
+
+          if (hasSpan) {
+            out += '</span>';
+          }
+
+          out += '<span';
+
+          if (class) {
+            out += ' class="' + class + '"';
+          }
+
+          if (style) {
+            out += ' style="' + style + '"';
+          }
+
+          hasSpan = true;
 
         }
 
+        out += text[i];
+
       }
+
+      if (hasSpan) {
+        out += '</span>';
+      }
+
+      $('#preview').html(out);
 
     },
 
